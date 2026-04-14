@@ -1,0 +1,68 @@
+{
+  "data_url": {
+    "description": "图库元数据 URL",
+    "type": "string",
+    "default": "",
+    "hint": "必填。填写 images.json 的完整 URL。"
+  },
+  "preview_base_url": {
+    "description": "预览图基地址",
+    "type": "string",
+    "default": "",
+    "hint": "必填。填写预览图目录的完整 URL，例如 https://example.com/image/preview"
+  },
+  "original_base_url": {
+    "description": "原图基地址",
+    "type": "string",
+    "default": "",
+    "hint": "可选。填写原图目录的完整 URL，例如 https://example.com/image/original"
+  },
+  "site_url": {
+    "description": "展示站点链接",
+    "type": "string",
+    "default": "",
+    "hint": "可选。配置后回图文案会附带你的展示站点首页链接。"
+  },
+  "safe_mode": {
+    "description": "默认启用安全模式",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后会过滤 R18 与超过不健全度阈值的图片。"
+  },
+  "max_sanity_level": {
+    "description": "最大不健全度",
+    "type": "int",
+    "default": 4,
+    "hint": "安全模式下允许发送的最大 sanity_level。"
+  },
+  "send_mode": {
+    "description": "发送模式",
+    "type": "string",
+    "default": "remote_first",
+    "hint": "remote_first 表示先发远程 URL，失败后回退下载；download_first 表示先下载再发送。"
+  },
+  "refresh_interval_minutes": {
+    "description": "刷新间隔（分钟）",
+    "type": "int",
+    "default": 60,
+    "hint": "后台自动刷新元数据的周期，最小按 1 分钟处理。"
+  },
+  "recent_avoid_count": {
+    "description": "最近去重数量",
+    "type": "int",
+    "default": 20,
+    "hint": "最近多少次发出的图片不会再次被随机到。"
+  },
+  "allowed_groups": {
+    "description": "允许响应的群号白名单",
+    "type": "list",
+    "default": [],
+    "hint": "留空表示不限制；填写群号列表后，仅这些群会响应主命令。"
+  },
+  "admin_can_disable_safe_mode": {
+    "description": "管理员可关闭安全模式",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后，管理员可使用 /收藏安全 开|关 临时切换安全模式。"
+  }
+}
