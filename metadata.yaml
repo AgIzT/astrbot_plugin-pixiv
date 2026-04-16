@@ -3,7 +3,7 @@ display_name: Pixiv 随机发图
 desc: 从 PixivCollection 静态元数据中随机抽图并发送到聊天。
 help: 输入 /收藏、/pixiv 或 /来张图 获取随机图片；管理员可使用 /收藏刷新、/收藏状态、/收藏安全 开|关。
 version: v0.1.0
-author: Enter
+author: Enter & Codex
 repo: https://pixivcollection.pages.dev/
 astrbot_version: ">=4.16,<5"
 support_platforms:

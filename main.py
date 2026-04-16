@@ -21,7 +21,7 @@ from .pixiv_random_core import PixivImageEntry, filter_candidates, normalize_pix
 
 @register(
     "astrbot_plugin_pixiv_random",
-    "Enter",
+    "Enter & Codex",
     "从 PixivCollection 静态元数据中随机抽取图片并发送。",
     "0.1.0",
     "https://pixivcollection.pages.dev/",
